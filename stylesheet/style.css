@@ -1,0 +1,495 @@
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content:center
+}
+.horizontal-list{
+    display: flex;
+    gap: 5rem;
+    list-style: none;
+    margin-top: 1.5rem;
+    color: white;
+    padding: 6px 15px;
+
+}
+
+.textHeader{
+    font-size: 3rem;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(#2b1055, #7597de)
+}
+
+li> a{
+    
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    z-index: 10;
+
+}
+li >a:hover{
+
+    border-radius: 50px;
+    background-color:azure;
+    color: black;
+
+}
+
+#st{
+   position: relative;
+   width: 100%;
+   height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+#horizon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95%;
+    object-fit: cover;
+    z-index: -1; /* Coloca la imagen detrás del contenido */
+
+}
+
+.Headers {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    align-items:center;
+    justify-content: center;
+    width: 100%;
+    font-size: larger;
+
+}
+
+
+
+
+
+
+#Languages{
+    display: flex;
+}
+
+#Projects{
+    display: flex;
+}
+
+#photo{
+    height: 45vh;
+    border-radius: 20%;
+    float: left;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+#Resume {
+    margin-top: 150px;
+    display: flex;    
+    gap: 8rem;
+    justify-content: center;
+    align-items: center;
+        
+
+}
+
+.resume-content > h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: white;
+
+}
+.resume-content > p {
+    max-width: 95%;
+    color: white;
+    font-size: 25px;
+}
+
+.resume-content > h3 {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: white;
+
+
+}
+/*
+#ResumeLeft {
+    display: flex;
+    
+}
+*/
+
+/*
+#ResumeLeft >div > p {
+    margin-top: 60px;   
+    display: flex;
+    max-width: 250px;
+    color: white;
+    
+}
+*/
+
+#divDescription{
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    text-align:center;
+    
+
+}
+#divDescription >div {
+
+    width: 660px;
+    color: white;
+    font-weight: bolder;
+    font-size:larger;
+    position: relative;
+}
+
+#Education_DivRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#Education_DivLeft{
+    height: 400px;
+    width: 490px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+#topo{
+    display: flex;
+    gap: 12rem;
+    flex-basis: 90%;
+    border-radius: 10px;
+    justify-content: center;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    
+}
+#Education{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    gap: 12rem;
+    height: 400px;
+    flex-wrap: wrap;
+}
+
+
+#Skills{
+    display: grid;
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 400px 400px 400px 400px;
+    gap: 3rem;
+}
+
+
+#Java{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end:2;
+    grid-row-start: 1;
+    grid-row-end:2
+}
+#JS {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 2;
+    grid-column-end:3;
+    grid-row-start: 1;
+    grid-row-end:2
+}
+#Python{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end:3
+
+}
+#SQL{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start:2;
+    grid-row-end:3;
+
+}
+#Rust{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start:3;
+    grid-row-end: 4;
+}
+
+#C{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+#Typescript {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end:2;
+    grid-row-start:4;
+    grid-row-end:5;
+}
+#HTML{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 2;
+    grid-column-end:3;
+    grid-row-start:4;
+    grid-row-end:5;
+
+}
+
+
+.logo{
+    height: 175px;
+}
+
+
+
+
+
+
+
+
+.horizontal-line{
+    position: absolute;
+    top: 270px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end:2;
+    height: 2px;  /* Grosor de la línea */
+    background-color: black;  /* Color de la línea */
+    width: 95%;  /* Ancho de la línea */
+    margin: 20px auto;  /* Espaciado superior/inferior y centrado */
+}
+
+
+
+.dynamic-text {
+    text-align: center;
+    margin: 0;
+    opacity: 0;                 /* El texto empieza invisible */
+    white-space: nowrap;        /* Evita que el texto se divida en varias líneas */
+    overflow: hidden;           /* Oculta el texto que no ha aparecido aún */
+    border-right: 2px solid;    /* Simula un cursor que parpadea */
+    width: 0ch;                 /* La anchura comienza desde 0 caracteres */
+    animation:
+      typing 2s steps(30, end) forwards,
+      blink 0.75s step-end infinite,
+      fadeIn 3s ease forwards;
+  }
+
+
+  
+  @keyframes typing {
+    from { width: 0ch; }        /* Empieza desde 0 caracteres */
+    to { width: 22ch; }         /* Ajusta esto dependiendo del número de caracteres */
+  }
+  
+  @keyframes blink {
+    0% { border-color: transparent; }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes typingRole {
+    from { width: 0ch; }        /* Empieza desde 0 caracteres */
+    to { width: 19ch; }         /* Ajusta esto según la longitud del segundo texto (19 caracteres en este caso) */
+  }
+
+
+
+
+  .social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid orange;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem ;
+    color: white;
+
+  }
+
+.logo:hover{
+    transform: scale(1.3) translateY(-5px);
+}
+  .social-icons a:hover{
+        color: black;
+        transform: scale(1.3) translateY(-5px);
+        background-color:orange;
+        box-shadow:0 0 25px orange ;
+  }
+  span{
+    color: orange;
+  }
+
+#Projects{
+    justify-content: center;
+    align-content: center;    
+    padding: .8rem 1rem;
+    height: 500px;
+}
+
+.TableBody{
+    width: 70%;
+    height: 50%;
+    background-color: #fffb;
+    overflow: auto;
+
+}
+
+table{
+    width: 70vw;
+    height: 30vh;
+    background-color: #fff5;
+    backdrop-filter: blur(7px);
+    border-radius: .8rem;
+    overflow: hidden;
+
+
+}
+thead th{
+    position: sticky;
+    top:0;
+    left:0;
+    background-color: #d5d1defe;
+    
+}
+
+table, th, td{
+    padding: 1rem;
+    border-collapse: collapse;
+}
+tr{
+    justify-content: center;
+    align-items: center;
+}
+
+#Contact{
+    height: 700px;
+    background-color: #5A7BC4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+#Contact > div {
+    background-color:antiquewhite;
+    height: 600px;
+    width: 1000px;
+    display: grid;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 10px rgba(0,0,0,.4);
+    overflow: hidden;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+#LeftContactDiv{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: antiquewhite;
+    display: grid;
+    grid-row: repeat(3, 1fr);
+
+}
+
+.rowContact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    
+}
+.rowContact> div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+#RightContactDiv{
+    margin: 30px;
+}
+
+#RightContactDiv > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    gap: 40px;
+
+}
+.inputs{
+    margin-bottom: 20px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+
+
